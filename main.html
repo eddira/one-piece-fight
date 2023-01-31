@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JS|ONE PIECE GAME</title>
+  <script type="module" src="./script.js"></script>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+  <h1> One Piece Game</h1>
+  <section id="game">
+    <div id="pictures">
+      <img src="./pictures/1-MONKEY-D.LUFFY.png" alt="MONKEY-D.LUFFY">
+      <img src="./pictures/2-BLACK-BEARD.png" alt="BLACK-BEARD">
+      <img src="./pictures/3-KAIDO.png" alt="KAIDO">
+      <img src="./pictures/4-BIG-MOM.png" alt="BIG-MOM">
+      <img src="./pictures/5-SHANKS.jpg" alt="SHANKS">
+      <img src="./pictures/6-SENGOKU.jpg" alt="SENGOKU">
+      <img src="./pictures/7-SAKAZUKI-AKAINU.jpg" alt="SAKAZUKI-AKAINU">
+      <img src="./pictures/8-MONKEY-D.DRAGON.png" alt="MONKEY-D.DRAGON">
+      <img src="./pictures/9-SILVERS-RAYLEIGH.jpg" alt="SILVERS-RAYLEIGH">
+    </div>
+    <div id="rules">
+      <h2>Game's rules :</h2>
+      <p></p>
+    </div>
+  </section>
+
+
+  <section id="fight">
+    <div class="players-choice">
+      <h3>your player :</h3>
+      <img id="your-player-display">
+    </div>
+
+    <div class="players-choice">
+      <h3>computer's player</h3>
+      <img id="your-computer-display">
+    </div>
+
+    <div class="score">
+      <div id="your-score">
+        <h2>your score :<span class="your-counter">0</span></h2>
+      </div>
+
+      <div id="computer-score">
+        <h2>computer's score :<span class="computer-counter">0</span></h2>
+      </div>
+
+  </section>
+
+  <button class="fight">fight</button>
+
+  <div class="result">result</div>
+
+  <dialog id="box-dialog">
+    <p>The winner is :</p>
+    <p id="winner"></p>
+    <button id="reset">reset</button>
+  </dialog>
+
+
+</body>
+
+</html>
