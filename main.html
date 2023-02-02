@@ -8,62 +8,90 @@
   <title>JS|ONE PIECE GAME</title>
   <script type="module" src="./script.js"></script>
   <link rel="stylesheet" href="./style.css">
-
 </head>
 
 <body>
-  <h1> One Piece Game</h1>
-  <section id="game">
-    <div id="pictures">
-      <img src="./pictures/1-MONKEY-D.LUFFY.png" alt="MONKEY-D.LUFFY">
-      <img src="./pictures/2-BLACK-BEARD.png" alt="BLACK-BEARD">
-      <img src="./pictures/3-KAIDO.png" alt="KAIDO">
-      <img src="./pictures/4-BIG-MOM.png" alt="BIG-MOM">
-      <img src="./pictures/5-SHANKS.jpg" alt="SHANKS">
-      <img src="./pictures/6-SENGOKU.jpg" alt="SENGOKU">
-      <img src="./pictures/7-SAKAZUKI-AKAINU.jpg" alt="SAKAZUKI-AKAINU">
-      <img src="./pictures/8-MONKEY-D.DRAGON.png" alt="MONKEY-D.DRAGON">
-      <img src="./pictures/9-SILVERS-RAYLEIGH.jpg" alt="SILVERS-RAYLEIGH">
-    </div>
-    <div id="rules">
-      <h2>Game's rules :</h2>
-      <p></p>
-    </div>
-  </section>
+  <h1>One Piece Game</h1>
+  <hr>
+  <main id="main-page">
 
-
-  <section id="fight">
-    <div class="players-choice">
-      <h3>your player :</h3>
-      <img id="your-player-display">
-    </div>
-
-    <div class="players-choice">
-      <h3>computer's player</h3>
-      <img id="your-computer-display">
-    </div>
-
-    <div class="score">
-      <div id="your-score">
-        <h2>your score :<span class="your-counter">0</span></h2>
+    <section id="game">
+      <div id="pictures">
+        <img src="./pictures/1-MONKEY-D.LUFFY.png" alt="MONKEY-D.LUFFY">
+        <img src="./pictures/2-BLACK-BEARD.png" alt="BLACK-BEARD">
+        <img src="./pictures/3-KAIDO.png" alt="KAIDO">
+        <img src="./pictures/4-BIG-MOM.png" alt="BIG-MOM">
+        <img src="./pictures/5-SHANKS.jpg" alt="SHANKS">
+        <img src="./pictures/6-SENGOKU.jpg" alt="SENGOKU">
+        <img src="./pictures/7-SAKAZUKI-AKAINU.jpg" alt="SAKAZUKI-AKAINU">
+        <img src="./pictures/8-MONKEY-D.DRAGON.png" alt="MONKEY-D.DRAGON">
+        <img src="./pictures/9-SILVERS-RAYLEIGH.jpg" alt="SILVERS-RAYLEIGH">
       </div>
 
-      <div id="computer-score">
-        <h2>computer's score :<span class="computer-counter">0</span></h2>
+      <div id="rules">
+        <h2>Game's rules :</h2>
+        <p>Initiated in 1997 and after 25 years of existence, the saga, with 100 volumes, best-selling manga of all
+          time, is entering its final phase, announced its japanese creator Eiichiro Oda.
+          This game is about fight between the probably most powerful characters in the saga by the approaching end.</p>
+        <br>
+        <p class="rules-game">You have to choose your player, click on fight button, and the computer will do the same !
+        </p><br>
+        <p class="rules-game">The first to reach 5 points wins the game !</p><br>
+        <p class="rules-characters"><span class="characters">MONKEY-D.LUFFY</span> defeats <span
+            class="characters">BLACK-BEARD, KAIDO, BIG-MOM</span> and is beaten by the others</p><br>
+        <p class="rules-characters"><span class="characters">BLACK-BEARD</span> defeats <span class="characters">KAIDO,
+            BIG-MOM, SHANKS</span></p><br>
+        <p class="rules-characters"><span class="characters">KAIDO</span> defeats <span class="characters">BIG-MOM,
+            SHANKS, SENGOKU</span></p><br>
+        <P class="rules-characters"><span class="characters">BIG-MOM</span> defeats <span class="characters"> SHANKS,
+            SENGOKU, SAKAZUKU-AKAIN</span></P><br>
+        <p class="rules-characters"><span class="characters">SHANKS</span> defeats <span class="characters">SENGOKU,
+            SAKAZUKI-AKAINU, MONKEY-D.DRAGON</span></p><br>
+        <p class="rules-characters"><span class="characters">SENGOCU</span> defeats <span class="characters">
+            SAKAZUKI-AKAINU, MONKEY-D.DRAGON, SILVERS-RAYLEIGH</span></p><br>
+        <P class="rules-characters"><span class="characters">SAKAZUKU-AKAIN</span> defeats <span
+            class="characters">MONKEY-D.DRAGON, SILVERS-RAYLEIGH, MONKEY-D.LUFFY</span></P><br>
+        <p class="rules-characters"><span class="characters">MONKEY-D.DRAGON</span> defeats <span
+            class="characters">SILVERS-RAYLEIGH, MONKEY-D.LUFFY, BLACK-BEARD</span></p><br>
+        <P class="rules-characters"><span class="characters">SILVERS-RAYLEIGH</span> defeats <span class="characters">
+            MONKEY-D.LUFFY, BLACK-BEARD, KAIDO</span></P><br>
+        <p class="rules-game">If you choose both the same player, it's tie ! and the counter doesn't increase !</p><br>
+        <p class="rules-game">For information, you have 37% of chance to win ! and the computer has 50% !</p><br>
+        <p class="rules-game">May the force be with you !</p><br>
+      </div>
+    </section>
+
+    <section id="play-panel">
+      <div>
+        <div id="start-fight">fight</div>
+        <div id="result">result</div>
+      </div>
+    </section>
+
+    <section id="fight">
+      <div class="players-choice">
+        <h3>your player</h3>
+        <img id="your-player-display">
+        <div id="your-score">
+          <h2>your score :<span class="your-counter">0</span></h2>
+        </div>
       </div>
 
-  </section>
-
-  <button class="fight">fight</button>
-
-  <div class="result">result</div>
+      <div class="players-choice">
+        <h3>computer's player</h3>
+        <img id="your-computer-display">
+        <div id="computer-score">
+          <h2>computer's score :<span class="computer-counter">0</span></h2>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <dialog id="box-dialog">
     <p>The winner is :</p>
     <p id="winner"></p>
     <button id="reset">reset</button>
   </dialog>
-
 
 </body>
 

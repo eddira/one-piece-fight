@@ -4,27 +4,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  /* outline: 1px solid red; */
 }
 
 body {
-  background-color: rgb(72, 63, 51);
+  background-color: rgb(233, 137, 126);
   font-family: Arial, Helvetica, sans-serif;
+  color: white;
 }
 
 h1 {
   font-family: "Roboto Condensed";
-  font-size: 6em;
+  font-size: 3em;
   text-align: center;
   text-transform: uppercase;
   color: white;
 }
 
 h2,
-span,
-#fight,
 #score {
   font-family: "Roboto Condensed";
-  font-size: 2em;
+  font-size: 1.5em;
   text-align: center;
   text-transform: uppercase;
   line-height: 3em;
@@ -34,25 +34,110 @@ span,
 
 #pictures {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
   align-items: center;
-  max-width: 50%;
+  justify-content: center;
+  align-content: center;
 }
 
 #pictures img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid whitesmoke;
+  display: block;
+}
+
+#fight img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 1px solid whitesmoke;
   display: block;
+  margin: 0 auto;
 }
 
 #fight {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  text-align: center;
 }
 
-dialog::backdrop {
+#rules {
+  height: 200px;
+  overflow: hidden;
+  overflow-y: scroll;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  text-shadow: rgb(169, 139, 21) 1px 0 10px;
+  text-align: justify;
+}
+
+.rules-characters {
+  text-align: center;
+}
+
+.rules-game {
+  text-align: center;
+}
+
+.characters {
+  color: darkred;
+  font-size: 0.9em;
+}
+
+#game {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+}
+
+#main-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: #020819;
+  margin: 15px;
+  border: 2px solid white;
+  border-radius: 20px;
+}
+
+#play-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#box-dialog {
   margin: auto;
-  filter: hue-rotate(90deg);
+  text-align: center;
+}
+
+#box-dialog::backdrop {
+  backdrop-filter: grayscale(1) blur(3px);
+}
+
+#start-fight {
+  background: rgb(15, 185, 55);
+  color: white;
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border-radius: 20px;
+}
+
+#result {
+  color: white;
+  font-family: "Roboto Condensed";
+  font-size: 2em;
+  letter-spacing: 0.5px;
+  text-align: center;
+  padding: 10px 30px;
+  text-transform: uppercase;
 }
