@@ -12,13 +12,9 @@ But also, to put in practice HTML-CSS with JAVASCRIPT DOM manipulation: function
 
 ## Key features
 * This game is between you and computer. 
-<br>
 * Math.floor(Math.random() * 9) to allow computer to choose your adversary between 9 characters. 
-<br>
 * The first to reach five points wins the game.
-<br>
 * You have about 37% of chance to win, the computer has about 50%. So may the force be with you ! 
-<br>
 
 ## What's next?
 Rise the difficulty by increasing the number of possible fighters and rules.
